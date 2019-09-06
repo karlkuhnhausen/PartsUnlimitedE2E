@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.ModelBinding;
 
@@ -7,6 +7,7 @@ namespace PartsUnlimited.Models
     //[Bind(Include = "FirstName,LastName,Address,City,State,PostalCode,Country,Phone,Email")]
     public class Order
     {
+        // Make another change.
         [BindNever]
         [ScaffoldColumn(false)]
         public int OrderId { get; set; }
